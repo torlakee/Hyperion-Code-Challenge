@@ -40,3 +40,38 @@
 * Tags and pushes the image
 * Requires IMAGE_NAME and TAG to be set
 * Use with: bash deploy.sh
+
+**♦ priceService.ts**
+
+*Service for fetching cryptocurrency prices from CoinMarketCap APIy*
+
+* Retrieves data using axios
+* Caches results with node-cache
+* Uses API key and base URL from config.ts
+* Returns price as a number
+
+**♦ taService.ts**
+
+*Service for fetching technical indicators from TAAPI.io*
+
+* Calls multiple endpoints: RSI, SMA, EMA, MACD, Bollinger Bands, ATR, Stochastic
+* Aggregates and caches the result
+* Dynamically builds requests per symbol and interval
+* Returns all indicators in a single object
+
+**♦ trendAnalysis.ts**
+
+*Classifies a crypto’s trend as Trending or Ranging*
+
+* Analyzes indicator thresholds (e.g., RSI > 70, MACD histogram > 1, etc.)
+* Returns 'Trending' or 'Ranging' based on logic
+* Acts as the decision engine for your MCP trend classification
+
+**♦ config.ts**
+
+*Central configuration loader using TOML*
+
+* Reads config.toml
+* Validates required fields: api keys, server port, URLs, cache.ttl
+* Uses toml to parse and fs to read
+* Exposes getConfig() and reloadConfig() methods
