@@ -1,5 +1,15 @@
 # Hyperion-Code-Challenge
 
+
+## Features
+
+- Configurable via `config.toml` (TOML-based settings)
+- Uses RSI, EMA, SMA, MACD, Bollinger Bands, ATR, and Stochastic
+- Classifies market as Trending or Ranging
+- Supports mock mode (`?mock=true`)
+- Docker + GitHub Actions CI ready
+- Auto reloads config on change
+
 ## Project Structure
 | File | Description |
 |------|-------------|
