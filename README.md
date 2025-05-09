@@ -1,6 +1,6 @@
 # Hyperion-Code-Challenge
 
-
+## Project Structure
 | File | Description |
 |------|-------------|
 | **`entrypoint.ts`** | Main entry file to initialize the Express server and mount API routes. |
