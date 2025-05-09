@@ -1,0 +1,13 @@
+[server]
+port = 8000
+
+[api]
+coinmarketcap_key = "your_coinmarketcap_api_key"
+taapi_key = "your_taapi_api_key"
+
+[urls]
+coinmarketcap = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest"
+taapi = "https://api.taapi.io"
+
+[cache]
+ttl = 60

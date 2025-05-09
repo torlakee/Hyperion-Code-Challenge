@@ -1,0 +1,28 @@
+# Ensure consistent LF line endings
+* text=auto eol=lf
+
+# Handle TypeScript and JavaScript files
+*.ts   text diff=ts
+*.tsx  text diff=ts
+*.js   text
+*.jsx  text
+
+# Ignore minified files in diff
+*.min.js -diff
+
+# Handle configuration and data files
+*.json text
+*.toml text
+*.yaml text
+*.yml  text
+
+# Documentation
+*.md text
+*.mdx text
+
+# Ignore generated files
+dist/* linguist-generated=true
+coverage/* linguist-generated=true
+
+# Shell scripts
+*.sh text eol=lf
